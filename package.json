@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "Masa",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут для молодых специалистов.",
   "browserslist": [
     "last 3 versions",
     "IE 11",

@@ -10,12 +10,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-alabaster:                   #f0efe9;
+$color-alabaster-opacity:           rgba(240, 239, 233, 0.8);
+$color-charcoal:                    #484848;
+$color-cerulean-blue:               #316dc2;
+$color-mischka:                     #a9afb7;
+$color-white-opacity:               rgba(255, 255, 255, 0.7);
+$color-white-opacity-light:         rgba(255, 255, 255, 0.2);
+$color-error-red:                   #ff121f;
 
 // Gradient
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
@@ -27,7 +31,7 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-manrope:                        "Manrope", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -47,6 +51,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
