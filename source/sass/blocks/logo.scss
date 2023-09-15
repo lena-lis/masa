@@ -1,0 +1,30 @@
+.logo__link {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  color: $color-cerulean-blue;
+  background-color: $color-default-white;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 28px;
+    height: 28px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-endeavour;
+  }
+}

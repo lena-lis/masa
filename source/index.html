@@ -16,19 +16,196 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="main-header">
+          <div class="main-header__container container">
+            <div class="main-header__logo-container logo">
+              <a class="main-header__logo logo__link" href="index.html">
+                <svg aria-hidden="true" focusable="false" width="28" height="28">
+                  <use href="img/sprite.svg#logo"></use>
+                </svg>
+                <span class="visually-hidden">Логотип проекта «Маса»</span>
+              </a>
+            </div>
+
+            <nav class="main-navigation" data-nav-main>
+              <button class="main-navigation__toggle toggle" type="button" data-nav-toggle>
+                Меню
+                <span class="toggle__container">
+                  <span class="toggle__icon"></span>
+                </span>
+              </button>
+
+              <div class="main-navigation__menu" data-nav-menu>
+                <ul class="main-navigation__list" data-accordion="parent">
+                  <li class="main-navigation__item">
+                    <a href="#about">О проекте</a>
+                  </li>
+
+                  <li class="main-navigation__item main-navigation__item--accordion" data-accordion="element">
+                    <a href="#!" data-accordion="button">
+                      Программы
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#arrow-small"></use>
+                      </svg>
+                    </a>
+                    <ul class="main-navigation__sublist" data-accordion="content">
+                      <li>
+                        <a href="#programms">Стажировки</a>
+                      </li>
+                      <li>
+                        <a href="#programms">Волонтёрство</a>
+                      </li>
+                      <li>
+                        <a href="#programms">Учёба</a>
+                      </li>
+                      <li>
+                        <a href="#programms">Религия</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="main-navigation__item">
+                    <a href="#conditions">Как поехать</a>
+                  </li>
+
+                  <li class="main-navigation__item">
+                    <a href="#reviews">Отзывы</a>
+                  </li>
+
+                  <li class="main-navigation__item main-navigation__item--accordion" data-accordion="element">
+                    <a href="#!" data-accordion="button">
+                      Новости
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#arrow-small"></use>
+                      </svg>
+                    </a>
+                    <ul class="main-navigation__sublist" data-accordion="content">
+                      <li>
+                        <a href="#news">Общее</a>
+                      </li>
+                      <li>
+                        <a href="#news">Волонтёрство</a>
+                      </li>
+                      <li>
+                        <a href="#news">Стажировки</a>
+                      </li>
+                      <li>
+                        <a href="#news">Карьера</a>
+                      </li>
+                      <li>
+                        <a href="#news">Путешествия</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="main-navigation__item">
+                    <a href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
+
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="hero">
+          <h1 class="visually-hidden">Маса - обучение и стажировки в Израиле</h1>
+          <div class="hero__container">
+            <div class="hero__slider swiper" data-hero-slider>
+              <ol class="hero__list swiper-wrapper">
+                <li class="hero__item swiper-slide">
+                  <div class="hero__content hero__content--internship">
+                    <h2>Программы стажировок в&nbsp;крупнейших компаниях Израиля</h2>
+                    <div class="hero__description-container">
+                      <p>Получите незаменимый опыт работы в&nbsp;ведущих израильских компаниях и&nbsp;государственных организациях.</p>
+                      <div class="hero__button-container">
+                        <a class="hero__button btn" href="#">
+                          Подробнее
+                          <svg aria-hidden="true" focusable="false" width="10" height="10">
+                            <use href="img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-internship-desktop.webp 1x, img/hero/hero-internship-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-internship-tablet.webp 1x, img/hero/hero-internship-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-internship-mobile.webp 1x, img/hero/hero-internship-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-internship-desktop.jpg 1x, img/hero/hero-internship-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-internship-tablet.jpg 1x, img/hero/hero-internship-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-internship-mobile.jpg" width="320" height="568" srcset="img/hero/hero-internship-mobile@2x.jpg 2x" alt="Ментор обучает двух стажеров.">
+                    </picture>
+                  </div>
+                </li>
+
+                <li class="hero__item swiper-slide">
+                  <div class="hero__content hero__content--volunteer">
+                    <h2>Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество</h2>
+                    <div class="hero__description-container">
+                      <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.</p>
+                      <div class="hero__button-container">
+                        <a class="hero__button btn" href="#">
+                          Подробнее
+                          <svg aria-hidden="true" focusable="false" width="10" height="10">
+                            <use href="img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-volunteer-desktop.webp 1x, img/hero/hero-volunteer-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-volunteer-tablet.webp 1x, img/hero/hero-volunteer-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-volunteer-mobile.webp 1x, img/hero/hero-volunteer-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-volunteer-desktop.jpg 1x, img/hero/hero-volunteer-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-volunteer-tablet.jpg 1x, img/hero/hero-volunteer-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-volunteer-mobile.jpg" width="320" height="568" srcset="img/hero/hero-volunteer-mobile@2x.jpg 2x" alt="Пятеро волонтёров.">
+                    </picture>
+                  </div>
+                </li>
+
+                <li class="hero__item swiper-slide">
+                  <div class="hero__content hero__content--education">
+                    <h2>Глобальный профессиональный опыт обучения за&nbsp;рубежом</h2>
+                    <div class="hero__description-container">
+                      <p>Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль жизни!</p>
+                      <div class="hero__button-container">
+                        <a class="hero__button btn" href="#">
+                          Подробнее
+                          <svg aria-hidden="true" focusable="false" width="10" height="10">
+                            <use href="img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-education-desktop.webp 1x, img/hero/hero-education-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-education-tablet.webp 1x, img/hero/hero-education-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-education-mobile.webp 1x, img/hero/hero-education-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-education-desktop.jpg 1x, img/hero/hero-education-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-education-tablet.jpg 1x, img/hero/hero-education-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-education-mobile.jpg" width="320" height="568" srcset="img/hero/hero-education-mobile@2x.jpg 2x" alt="Девушка со стопкой учебных материалов в руках.">
+                    </picture>
+                  </div>
+                </li>
+              </ol>
+
+              <!-- Пагинация hero-слайдера -->
+              <div class="hero__pagination swiper-pagination"></div>
+            </div>
           </div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>

@@ -6,7 +6,7 @@
   line-height: 14px;
   font-weight: 500;
   color: $color-cerulean-blue;
-
+  text-transform: uppercase;
   background-color: $color-transparent;
   border: 1px solid $color-cerulean-blue;
   cursor: pointer;
@@ -15,9 +15,27 @@
     color $trans-default,
     background-color $trans-default;
 
+  svg {
+    position: relative;
+    color: $color-default-white;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 46px;
+      height: 46px;
+
+      background-color: $color-cerulean-blue;
+      transform: rotate(-45deg);
+      content: "";
+    }
+  }
+
   &:hover,
   &:focus,
-  &focus-visible {
+  &:focus-visible {
     color: $color-default-white;
     background-color: $color-cerulean-blue;
     outline: none;
@@ -26,11 +44,28 @@
   &:active {
     color: $color-white-opacity;
     background-color: $color-cerulean-blue;
+
+    svg {
+      color: $color-cerulean-blue-opacity;
+
+      &::before {
+        background-color: $color-default-white;
+      }
+    }
   }
 
-  &:disabled {
+  &:disabled,
+  &.disabled {
     color: $color-mischka;
     border-color: $color-mischka;
     pointer-events: none;
+
+    svg {
+      opacity: 0.6;
+
+      &::before {
+        background-color: $color-mischka;
+      }
+    }
   }
 }
