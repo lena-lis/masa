@@ -1,5 +1,5 @@
 .main-navigation__toggle {
-  margin-bottom: 4px;
+  margin-left: auto;
 }
 
 .main-navigation__menu {
@@ -8,7 +8,7 @@
 
   width: 286px;
   min-height: 280px;
-  padding: 35px 25px;
+  padding: 34px 24px 32px;
 
   background-color: $color-cerulean-blue;
   border-radius: 16px;
@@ -39,23 +39,42 @@
 }
 
 .main-navigation__list {
-  gap: 28px;
-}
-
-.main-navigation__sublist {
-  margin-left: 16px;
-  gap: 16px;
+  gap: 24px;
 }
 
 .main-navigation__item {
   a {
     text-transform: uppercase;
-    letter-spacing: 0.32px;
   }
 
   &.is-active {
+    .main-navigation__accordion {
+      color: $color-default-white;
+    }
+
     svg {
+      color: $color-default-white;
       transform: rotate(180deg);
     }
+  }
+}
+
+.main-navigation__accordion {
+  span {
+    padding-right: 7px;
+  }
+}
+
+.main-navigation__sublist {
+  margin-left: 16px;
+  gap: 12px;
+
+  li:first-of-type {
+    padding-top: 16px;
+  }
+
+  a {
+    text-transform: none;
+    letter-spacing: 0.4px;
   }
 }

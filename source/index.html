@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="main-header">
+        <div class="main-header" data-main-header>
           <div class="main-header__container container">
             <div class="main-header__logo-container logo">
               <a class="main-header__logo logo__link" href="index.html">
@@ -28,7 +28,7 @@
             </div>
 
             <nav class="main-navigation" data-nav-main>
-              <button class="main-navigation__toggle toggle" type="button" data-nav-toggle>
+              <button class="main-navigation__toggle toggle btn" type="button" data-nav-toggle>
                 Меню
                 <span class="toggle__container">
                   <span class="toggle__icon"></span>
@@ -41,9 +41,9 @@
                     <a href="#about">О проекте</a>
                   </li>
 
-                  <li class="main-navigation__item main-navigation__item--accordion" data-accordion="element">
-                    <a href="#!" data-accordion="button">
-                      Программы
+                  <li class="main-navigation__item" data-accordion="element">
+                    <a class="main-navigation__accordion" href="#!" data-accordion="button">
+                      <span>Программы</span>
                       <svg aria-hidden="true" focusable="false" width="12" height="12">
                         <use href="img/sprite.svg#arrow-small"></use>
                       </svg>
@@ -72,9 +72,9 @@
                     <a href="#reviews">Отзывы</a>
                   </li>
 
-                  <li class="main-navigation__item main-navigation__item--accordion" data-accordion="element">
-                    <a href="#!" data-accordion="button">
-                      Новости
+                  <li class="main-navigation__item" data-accordion="element">
+                    <a class="main-navigation__accordion" href="#!" data-accordion="button">
+                      <span>Новости</span>
                       <svg aria-hidden="true" focusable="false" width="12" height="12">
                         <use href="img/sprite.svg#arrow-small"></use>
                       </svg>
