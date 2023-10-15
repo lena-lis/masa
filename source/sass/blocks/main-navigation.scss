@@ -43,8 +43,19 @@
 }
 
 .main-navigation__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+
   a {
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $color-default-white;
+      outline: none;
+    }
   }
 
   &.is-active {
