@@ -2275,6 +2275,7 @@ button,
 
 .main-header {
   position: relative;
+  width: 100%;
   z-index: 2;
 }
 
@@ -2290,7 +2291,10 @@ button,
 }
 
 .main-header__container {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2298,8 +2302,18 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 30px;
-  overflow: scroll;
-  max-height: calc(100vh - 15px);
+  max-height: 100vh;
+}
+
+.main-navigation:has(.main-navigation__menu.is-open) {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main-navigation:has(.main-navigation__menu.is-open)::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .main-navigation__toggle {
