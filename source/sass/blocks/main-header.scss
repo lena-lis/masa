@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  width: 100%;
   z-index: 2;
 
   &.is-active {
@@ -17,10 +18,12 @@
 }
 
 .main-header__container {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  overflow: scroll;
-  max-height: calc(100vh - 15px);
+  max-height: 100vh;
 }
