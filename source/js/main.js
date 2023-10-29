@@ -3,6 +3,7 @@ import {initAccordions} from './modules/accordions/init-accordion';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {onNavToggleButtonClick} from './modules/menu-toggle';
+import {initHeroSlider} from './modules/sliders';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     onNavToggleButtonClick();
+    initHeroSlider();
     initAccordions();
     initModals();
     const form = new Form();

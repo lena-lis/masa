@@ -1,13 +1,6 @@
 .toggle {
   position: relative;
-  display: block;
   min-width: 134px;
-  min-height: 54px;
-  padding: 19px;
-  letter-spacing: 0.1px;
-  background-color: $color-default-white;
-  border-radius: 30px;
-  transition: all $trans-default;
 
   &:hover,
   &:focus {
